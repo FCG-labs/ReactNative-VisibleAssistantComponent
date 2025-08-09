@@ -1,13 +1,16 @@
 {
-  "name": "@vac/rn-client",
-  "version": "0.1.0",
+  "name": "@fcg-labs/rn-vac",
+  "version": "0.0.2",
   "license": "MIT",
   "main": "src/index.js",
   "type": "commonjs",
   "private": false,
+  "files": ["src","ui","README.md", "LICENSE"],
   "exports": {
-    ".": "./src/index.js"
+    ".": "./src/index.js",
+    "ui": "./ui/public/index.html"
   },
+  "types": "src/index.d.ts",
   "peerDependencies": {
     "react-native": ">=0.70.0"
   }

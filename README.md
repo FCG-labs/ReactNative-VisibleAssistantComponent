@@ -15,7 +15,7 @@ connect to the VAC Host running on your machine or network.
 
 ```sh
 # 1) Install the RN client SDK inside your app
-npm i @vac/rn-client
+npm i @fcg-labs/rn-vac
 
 # 2) Provide connection info
 cat > .vacrc.json <<'EOF'
@@ -35,7 +35,7 @@ npx http-server ReactNative-VisibleAssistantComponent/ui/public --port 5500
 ```tsx
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { createVacClient, buildSnapshotFromReactNavigation } from '@vac/rn-client';
+import { createVacClient, buildSnapshotFromReactNavigation } from '@fcg-labs/rn-vac';
 
 const vac = createVacClient({ host: '127.0.0.1', port: 8090, token: 'dev-token' });
 
@@ -52,6 +52,10 @@ export default function App() {
   );
 }
 ```
+
+## TypeScript support
+
+The package ships with bundled typings (`src/index.d.ts`). No additional `@types` install is required. Works out of the box in Expo & bare RN projects.
 
 ## Message Protocol (v1)
 
