@@ -1,0 +1,10 @@
+{
+  "name": "@vac/ui",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": false,
+  "main": "public/index.html",
+  "files": [
+    "public"
+  ]
+}

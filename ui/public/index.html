@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VAC UI</title>
+  <style>
+    html, body, #root { height: 100%; margin: 0; }
+    .toolbar { padding: 8px; border-bottom: 1px solid #eee; font-family: sans-serif; }
+    .canvas { height: calc(100% - 41px); }
+  </style>
+  <!-- React / ReactDOM -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <!-- React Flow (xyflow) v11 UMD -->
+  <script src="https://cdn.jsdelivr.net/npm/reactflow@11.11.4/dist/umd/index.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/reactflow@11.11.4/dist/style.min.css" rel="stylesheet">
+  <!-- ELK for layout -->
+  <script src="https://unpkg.com/elkjs/lib/elk.bundled.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="./app.js"></script>
+</body>
+</html>

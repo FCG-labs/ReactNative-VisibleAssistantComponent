@@ -1,0 +1,14 @@
+{
+  "name": "@vac/rn-client",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "private": false,
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.70.0"
+  }
+}
